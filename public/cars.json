@@ -1,0 +1,656 @@
+[
+  {
+    "id": "1",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car1",
+    "price": "$20,000",
+    "company_brand": "Toyota",
+    "sub_details": {
+      "car_state": "new",
+      "model": "Corolla",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car1_1",
+        "https://fakeimg.pl/350x200/?text=Car1_2",
+        "https://fakeimg.pl/350x200/?text=Car1_3",
+        "https://fakeimg.pl/350x200/?text=Car1_4"
+      ],
+      "seller_details": {
+        "name": "John Doe",
+        "phone": "123-456-7890",
+        "email": "john@example.com",
+        "address": "123 Main St, Springfield",
+        "rating": "4.5",
+        "image": "https://fakeimg.pl/100x100/?text=Seller1"
+      },
+      "description": "A reliable and fuel-efficient compact car.",
+      "warranty": "5 years",
+      "mileage": "0",
+      "condition": "excellent",
+      "used_or_new": "new",
+      "year": "2024",
+      "engine": "1.8L 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Blue",
+      "fuel_type": "Gasoline",
+      "registration": "AB123CD",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "1800cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "139 hp",
+      "wheels": "Alloy",
+      "drive": "FWD",
+      "features": [
+        "Air Conditioning",
+        "Bluetooth",
+        "Backup Camera",
+        "Cruise Control"
+      ],
+      "specifications": [
+        "Fuel Economy: 30 MPG City / 38 MPG Highway",
+        "Length: 182.3 in",
+        "Width: 70.1 in",
+        "Height: 56.5 in"
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car2",
+    "price": "$35,000",
+    "company_brand": "Honda",
+    "sub_details": {
+      "car_state": "second hand",
+      "model": "Civic",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car2_1",
+        "https://fakeimg.pl/350x200/?text=Car2_2",
+        "https://fakeimg.pl/350x200/?text=Car2_3",
+        "https://fakeimg.pl/350x200/?text=Car2_4"
+      ],
+      "seller_details": {
+        "name": "Jane Smith",
+        "phone": "234-567-8901",
+        "email": "jane@example.com",
+        "address": "456 Elm St, Metropolis",
+        "rating": "4.7",
+        "image": "https://fakeimg.pl/100x100/?text=Seller2"
+      },
+      "description": "A sporty and efficient compact car.",
+      "warranty": "3 years",
+      "mileage": "15000",
+      "condition": "very good",
+      "used_or_new": "used",
+      "year": "2022",
+      "engine": "2.0L 4-Cylinder",
+      "transmission": "Manual",
+      "color": "Red",
+      "fuel_type": "Gasoline",
+      "registration": "BC234DE",
+      "body_type": "Coupe",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "2000cc",
+      "doors": "2",
+      "seats": "5",
+      "engine_power": "158 hp",
+      "wheels": "Steel",
+      "drive": "FWD",
+      "features": ["Sunroof", "Navigation", "Leather Seats", "Heated Seats"],
+      "specifications": [
+        "Fuel Economy: 29 MPG City / 37 MPG Highway",
+        "Length: 177.9 in",
+        "Width: 70.8 in",
+        "Height: 55.7 in"
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car3",
+    "price": "$45,000",
+    "company_brand": "BMW",
+    "sub_details": {
+      "car_state": "new",
+      "model": "3 Series",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car3_1",
+        "https://fakeimg.pl/350x200/?text=Car3_2",
+        "https://fakeimg.pl/350x200/?text=Car3_3",
+        "https://fakeimg.pl/350x200/?text=Car3_4"
+      ],
+      "seller_details": {
+        "name": "Robert Johnson",
+        "phone": "345-678-9012",
+        "email": "robert@example.com",
+        "address": "789 Pine St, Gotham",
+        "rating": "4.8",
+        "image": "https://fakeimg.pl/100x100/?text=Seller3"
+      },
+      "description": "A luxury sports sedan with excellent performance.",
+      "warranty": "4 years",
+      "mileage": "0",
+      "condition": "excellent",
+      "used_or_new": "new",
+      "year": "2024",
+      "engine": "3.0L Inline-6",
+      "transmission": "Automatic",
+      "color": "White",
+      "fuel_type": "Gasoline",
+      "registration": "CD345EF",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "3000cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "382 hp",
+      "wheels": "Alloy",
+      "drive": "RWD",
+      "features": [
+        "Adaptive Cruise Control",
+        "Apple CarPlay",
+        "Harman Kardon Sound System",
+        "Heads-Up Display"
+      ],
+      "specifications": [
+        "Fuel Economy: 25 MPG City / 34 MPG Highway",
+        "Length: 185.7 in",
+        "Width: 71.9 in",
+        "Height: 56.8 in"
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car4",
+    "price": "$28,000",
+    "company_brand": "Ford",
+    "sub_details": {
+      "car_state": "second hand",
+      "model": "Fusion",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car4_1",
+        "https://fakeimg.pl/350x200/?text=Car4_2",
+        "https://fakeimg.pl/350x200/?text=Car4_3",
+        "https://fakeimg.pl/350x200/?text=Car4_4"
+      ],
+      "seller_details": {
+        "name": "Emily Davis",
+        "phone": "456-789-0123",
+        "email": "emily@example.com",
+        "address": "101 Maple St, Star City",
+        "rating": "4.6",
+        "image": "https://fakeimg.pl/100x100/?text=Seller4"
+      },
+      "description": "A midsize sedan with a comfortable ride.",
+      "warranty": "2 years",
+      "mileage": "20000",
+      "condition": "good",
+      "used_or_new": "used",
+      "year": "2021",
+      "engine": "2.5L 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Black",
+      "fuel_type": "Gasoline",
+      "registration": "DE456FG",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "2500cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "175 hp",
+      "wheels": "Steel",
+      "drive": "FWD",
+      "features": [
+        "Keyless Entry",
+        "Remote Start",
+        "Blind Spot Monitoring",
+        "Lane Keep Assist"
+      ],
+      "specifications": [
+        "Fuel Economy: 21 MPG City / 31 MPG Highway",
+        "Length: 191.8 in",
+        "Width: 75.2 in",
+        "Height: 58.2 in"
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car5",
+    "price": "$60,000",
+    "company_brand": "Mercedes-Benz",
+    "sub_details": {
+      "car_state": "new",
+      "model": "C-Class",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car5_1",
+        "https://fakeimg.pl/350x200/?text=Car5_2",
+        "https://fakeimg.pl/350x200/?text=Car5_3",
+        "https://fakeimg.pl/350x200/?text=Car5_4"
+      ],
+      "seller_details": {
+        "name": "Michael Brown",
+        "phone": "567-890-1234",
+        "email": "michael@example.com",
+        "address": "202 Oak St, Central City",
+        "rating": "4.9",
+        "image": "https://fakeimg.pl/100x100/?text=Seller5"
+      },
+      "description": "A premium sedan with advanced technology.",
+      "warranty": "5 years",
+      "mileage": "0",
+      "condition": "excellent",
+      "used_or_new": "new",
+      "year": "2024",
+      "engine": "2.0L Turbo 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Silver",
+      "fuel_type": "Gasoline",
+      "registration": "EF567GH",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "2000cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "255 hp",
+      "wheels": "Alloy",
+      "drive": "AWD",
+      "features": [
+        "Panoramic Sunroof",
+        "Ambient Lighting",
+        "Wireless Charging",
+        "360-Degree Camera"
+      ],
+      "specifications": [
+        "Fuel Economy: 23 MPG City / 34 MPG Highway",
+        "Length: 184.5 in",
+        "Width: 71.3 in",
+        "Height: 56.6 in"
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car6",
+    "price": "$18,000",
+    "company_brand": "Nissan",
+    "sub_details": {
+      "car_state": "second hand",
+      "model": "Sentra",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car6_1",
+        "https://fakeimg.pl/350x200/?text=Car6_2",
+        "https://fakeimg.pl/350x200/?text=Car6_3",
+        "https://fakeimg.pl/350x200/?text=Car6_4"
+      ],
+      "seller_details": {
+        "name": "Sophia Williams",
+        "phone": "678-901-2345",
+        "email": "sophia@example.com",
+        "address": "303 Birch St, Coast City",
+        "rating": "4.4",
+        "image": "https://fakeimg.pl/100x100/?text=Seller6"
+      },
+      "description": "A compact sedan with a modern design.",
+      "warranty": "1 year",
+      "mileage": "30000",
+      "condition": "fair",
+      "used_or_new": "used",
+      "year": "2020",
+      "engine": "1.6L 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Gray",
+      "fuel_type": "Gasoline",
+      "registration": "GH678IJ",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "1600cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "130 hp",
+      "wheels": "Steel",
+      "drive": "FWD",
+      "features": [
+        "Bluetooth",
+        "Backup Camera",
+        "Cruise Control",
+        "Air Conditioning"
+      ],
+      "specifications": [
+        "Fuel Economy: 29 MPG City / 39 MPG Highway",
+        "Length: 182.7 in",
+        "Width: 71.5 in",
+        "Height: 57.0 in"
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car7",
+    "price": "$50,000",
+    "company_brand": "Audi",
+    "sub_details": {
+      "car_state": "new",
+      "model": "A4",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car7_1",
+        "https://fakeimg.pl/350x200/?text=Car7_2",
+        "https://fakeimg.pl/350x200/?text=Car7_3",
+        "https://fakeimg.pl/350x200/?text=Car7_4"
+      ],
+      "seller_details": {
+        "name": "William Jones",
+        "phone": "789-012-3456",
+        "email": "william@example.com",
+        "address": "404 Cedar St, Emerald City",
+        "rating": "4.8",
+        "image": "https://fakeimg.pl/100x100/?text=Seller7"
+      },
+      "description": "A luxury compact sedan with high performance.",
+      "warranty": "4 years",
+      "mileage": "0",
+      "condition": "excellent",
+      "used_or_new": "new",
+      "year": "2024",
+      "engine": "2.0L Turbo 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Blue",
+      "fuel_type": "Gasoline",
+      "registration": "IJ789KL",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "2000cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "261 hp",
+      "wheels": "Alloy",
+      "drive": "AWD",
+      "features": [
+        "Virtual Cockpit",
+        "Bang & Olufsen Sound System",
+        "Heated Seats",
+        "Adaptive Cruise Control"
+      ],
+      "specifications": [
+        "Fuel Economy: 24 MPG City / 31 MPG Highway",
+        "Length: 187.5 in",
+        "Width: 72.7 in",
+        "Height: 56.2 in"
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car8",
+    "price": "$40,000",
+    "company_brand": "Chevrolet",
+    "sub_details": {
+      "car_state": "second hand",
+      "model": "Malibu",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car8_1",
+        "https://fakeimg.pl/350x200/?text=Car8_2",
+        "https://fakeimg.pl/350x200/?text=Car8_3",
+        "https://fakeimg.pl/350x200/?text=Car8_4"
+      ],
+      "seller_details": {
+        "name": "Olivia Martin",
+        "phone": "890-123-4567",
+        "email": "olivia@example.com",
+        "address": "505 Spruce St, Rivendell",
+        "rating": "4.7",
+        "image": "https://fakeimg.pl/100x100/?text=Seller8"
+      },
+      "description": "A midsize sedan with a sleek design.",
+      "warranty": "2 years",
+      "mileage": "10000",
+      "condition": "very good",
+      "used_or_new": "used",
+      "year": "2021",
+      "engine": "1.5L Turbo 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "White",
+      "fuel_type": "Gasoline",
+      "registration": "KL890MN",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "1500cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "160 hp",
+      "wheels": "Steel",
+      "drive": "FWD",
+      "features": [
+        "Remote Start",
+        "Blind Spot Monitoring",
+        "Apple CarPlay",
+        "Android Auto"
+      ],
+      "specifications": [
+        "Fuel Economy: 29 MPG City / 36 MPG Highway",
+        "Length: 194.2 in",
+        "Width: 73.0 in",
+        "Height: 57.9 in"
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car9",
+    "price": "$55,000",
+    "company_brand": "Tesla",
+    "sub_details": {
+      "car_state": "new",
+      "model": "Model 3",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car9_1",
+        "https://fakeimg.pl/350x200/?text=Car9_2",
+        "https://fakeimg.pl/350x200/?text=Car9_3",
+        "https://fakeimg.pl/350x200/?text=Car9_4"
+      ],
+      "seller_details": {
+        "name": "James Wilson",
+        "phone": "901-234-5678",
+        "email": "james@example.com",
+        "address": "606 Redwood St, Arkham",
+        "rating": "4.9",
+        "image": "https://fakeimg.pl/100x100/?text=Seller9"
+      },
+      "description": "An electric sedan with impressive range and performance.",
+      "warranty": "8 years",
+      "mileage": "0",
+      "condition": "excellent",
+      "used_or_new": "new",
+      "year": "2024",
+      "engine": "Electric",
+      "transmission": "Automatic",
+      "color": "Black",
+      "fuel_type": "Electric",
+      "registration": "MN901OP",
+      "body_type": "Sedan",
+      "engine_type": "Electric",
+      "engine_capacity": "N/A",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "450 hp",
+      "wheels": "Alloy",
+      "drive": "AWD",
+      "features": [
+        "Autopilot",
+        "Full Self-Driving",
+        "Premium Connectivity",
+        "Glass Roof"
+      ],
+      "specifications": [
+        "Range: 353 miles",
+        "Top Speed: 145 mph",
+        "0-60 mph: 3.1 seconds"
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car10",
+    "price": "$30,000",
+    "company_brand": "Mazda",
+    "sub_details": {
+      "car_state": "second hand",
+      "model": "Mazda3",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car10_1",
+        "https://fakeimg.pl/350x200/?text=Car10_2",
+        "https://fakeimg.pl/350x200/?text=Car10_3",
+        "https://fakeimg.pl/350x200/?text=Car10_4"
+      ],
+      "seller_details": {
+        "name": "Charlotte Clark",
+        "phone": "012-345-6789",
+        "email": "charlotte@example.com",
+        "address": "707 Ash St, Wakanda",
+        "rating": "4.5",
+        "image": "https://fakeimg.pl/100x100/?text=Seller10"
+      },
+      "description": "A stylish compact car with sporty handling.",
+      "warranty": "3 years",
+      "mileage": "12000",
+      "condition": "very good",
+      "used_or_new": "used",
+      "year": "2022",
+      "engine": "2.5L 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Red",
+      "fuel_type": "Gasoline",
+      "registration": "OP012QR",
+      "body_type": "Hatchback",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "2500cc",
+      "doors": "5",
+      "seats": "5",
+      "engine_power": "186 hp",
+      "wheels": "Alloy",
+      "drive": "FWD",
+      "features": [
+        "Adaptive Cruise Control",
+        "Heated Seats",
+        "Navigation",
+        "Bose Sound System"
+      ],
+      "specifications": [
+        "Fuel Economy: 26 MPG City / 35 MPG Highway",
+        "Length: 183.5 in",
+        "Width: 70.7 in",
+        "Height: 56.9 in"
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car11",
+    "price": "$25,000",
+    "company_brand": "Hyundai",
+    "sub_details": {
+      "car_state": "new",
+      "model": "Elantra",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car11_1",
+        "https://fakeimg.pl/350x200/?text=Car11_2",
+        "https://fakeimg.pl/350x200/?text=Car11_3",
+        "https://fakeimg.pl/350x200/?text=Car11_4"
+      ],
+      "seller_details": {
+        "name": "Liam Walker",
+        "phone": "123-456-7891",
+        "email": "liam@example.com",
+        "address": "808 Walnut St, Asgard",
+        "rating": "4.7",
+        "image": "https://fakeimg.pl/100x100/?text=Seller11"
+      },
+      "description": "A compact sedan with a bold design.",
+      "warranty": "5 years",
+      "mileage": "0",
+      "condition": "excellent",
+      "used_or_new": "new",
+      "year": "2024",
+      "engine": "2.0L 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Gray",
+      "fuel_type": "Gasoline",
+      "registration": "QR123ST",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "2000cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "147 hp",
+      "wheels": "Alloy",
+      "drive": "FWD",
+      "features": [
+        "Wireless Android Auto",
+        "Wireless Apple CarPlay",
+        "Heated Front Seats",
+        "Smart Cruise Control"
+      ],
+      "specifications": [
+        "Fuel Economy: 33 MPG City / 43 MPG Highway",
+        "Length: 184.1 in",
+        "Width: 71.9 in",
+        "Height: 55.7 in"
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "primary_image": "https://fakeimg.pl/350x200/?text=Car12",
+    "price": "$35,000",
+    "company_brand": "Kia",
+    "sub_details": {
+      "car_state": "second hand",
+      "model": "Optima",
+      "images": [
+        "https://fakeimg.pl/350x200/?text=Car12_1",
+        "https://fakeimg.pl/350x200/?text=Car12_2",
+        "https://fakeimg.pl/350x200/?text=Car12_3",
+        "https://fakeimg.pl/350x200/?text=Car12_4"
+      ],
+      "seller_details": {
+        "name": "Lucas Scott",
+        "phone": "234-567-8902",
+        "email": "lucas@example.com",
+        "address": "909 Pine St, Westeros",
+        "rating": "4.6",
+        "image": "https://fakeimg.pl/100x100/?text=Seller12"
+      },
+      "description": "A midsize sedan with impressive technology features.",
+      "warranty": "3 years",
+      "mileage": "5000",
+      "condition": "good",
+      "used_or_new": "used",
+      "year": "2021",
+      "engine": "1.6L Turbo 4-Cylinder",
+      "transmission": "Automatic",
+      "color": "Black",
+      "fuel_type": "Gasoline",
+      "registration": "ST234UV",
+      "body_type": "Sedan",
+      "engine_type": "Internal Combustion",
+      "engine_capacity": "1600cc",
+      "doors": "4",
+      "seats": "5",
+      "engine_power": "178 hp",
+      "wheels": "Alloy",
+      "drive": "FWD",
+      "features": [
+        "Panoramic Sunroof",
+        "Remote Start",
+        "Harman Kardon Sound System",
+        "Smart Trunk"
+      ],
+      "specifications": [
+        "Fuel Economy: 27 MPG City / 37 MPG Highway",
+        "Length: 191.1 in",
+        "Width: 73.2 in",
+        "Height: 57.7 in"
+      ]
+    }
+  }
+]
