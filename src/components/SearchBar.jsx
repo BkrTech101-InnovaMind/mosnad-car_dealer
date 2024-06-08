@@ -5,8 +5,17 @@ export default function SearchBar({ onSearch }) {
   const [query, setQuery] = useState("");
 
   const handleInputChange = (e) => {
-    setQuery(e.target.value);
-    onSearch(e.target.value);
+    const newQuery = e.target.value;
+    if (!newQuery) onSearch("");
+    setQuery(newQuery);
+    console.log(newQuery);
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (!query) return;
+    onSearch(query);
+    console.log(query);
   };
 
   const toggleDropdown = () => {
@@ -14,7 +23,7 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <form className="max-w-xl lg:flex-1">
+    <form className="max-w-xl lg:flex-1" onSubmit={handleSearch}>
       <div className="flex relative">
         <label
           htmlFor="search-dropdown"
@@ -38,9 +47,9 @@ export default function SearchBar({ onSearch }) {
           >
             <path
               stroke="currentColor"
-              strokelinecap="round"
+              strokeLinecap="round"
               strokeLinejoin="round"
-              strokewidth="2"
+              strokeWidth="2"
               d="m1 1 4 4 4-4"
             />
           </svg>
@@ -92,14 +101,14 @@ export default function SearchBar({ onSearch }) {
         <div className="relative w-full">
           <input
             value={query}
+            onChange={handleInputChange}
             type="search"
             id="search-dropdown"
             className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
             placeholder="Search By Brand, Model, Price..."
-            required
           />
           <button
-            onClick={handleInputChange}
+            onClick={handleSearch}
             type="button"
             className="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
@@ -112,9 +121,9 @@ export default function SearchBar({ onSearch }) {
             >
               <path
                 stroke="currentColor"
-                strokelinecap="round"
+                strokeLinecap="round"
                 strokeLinejoin="round"
-                strokewidth="2"
+                strokeWidth="2"
                 d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
               />
             </svg>
