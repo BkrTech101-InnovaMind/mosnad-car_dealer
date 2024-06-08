@@ -2,7 +2,7 @@
   {
     "id": "1",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car1",
-    "price": "$20,000",
+    "price": "20,000",
     "company_brand": "Toyota",
     "sub_details": {
       "car_state": "new",
@@ -57,7 +57,7 @@
   {
     "id": "2",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car2",
-    "price": "$35,000",
+    "price": "35,000",
     "company_brand": "Honda",
     "sub_details": {
       "car_state": "second hand",
@@ -107,7 +107,7 @@
   {
     "id": "3",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car3",
-    "price": "$45,000",
+    "price": "45,000",
     "company_brand": "BMW",
     "sub_details": {
       "car_state": "new",
@@ -162,7 +162,7 @@
   {
     "id": "4",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car4",
-    "price": "$28,000",
+    "price": "28,000",
     "company_brand": "Ford",
     "sub_details": {
       "car_state": "second hand",
@@ -217,7 +217,7 @@
   {
     "id": "5",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car5",
-    "price": "$60,000",
+    "price": "60,000",
     "company_brand": "Mercedes-Benz",
     "sub_details": {
       "car_state": "new",
@@ -272,7 +272,7 @@
   {
     "id": "6",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car6",
-    "price": "$18,000",
+    "price": "18,000",
     "company_brand": "Nissan",
     "sub_details": {
       "car_state": "second hand",
@@ -327,7 +327,7 @@
   {
     "id": "7",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car7",
-    "price": "$50,000",
+    "price": "50,000",
     "company_brand": "Audi",
     "sub_details": {
       "car_state": "new",
@@ -382,7 +382,7 @@
   {
     "id": "8",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car8",
-    "price": "$40,000",
+    "price": "40,000",
     "company_brand": "Chevrolet",
     "sub_details": {
       "car_state": "second hand",
@@ -437,7 +437,7 @@
   {
     "id": "9",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car9",
-    "price": "$55,000",
+    "price": "55,000",
     "company_brand": "Tesla",
     "sub_details": {
       "car_state": "new",
@@ -491,7 +491,7 @@
   {
     "id": "10",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car10",
-    "price": "$30,000",
+    "price": "30,000",
     "company_brand": "Mazda",
     "sub_details": {
       "car_state": "second hand",
@@ -546,7 +546,7 @@
   {
     "id": "11",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car11",
-    "price": "$25,000",
+    "price": "25,000",
     "company_brand": "Hyundai",
     "sub_details": {
       "car_state": "new",
@@ -601,7 +601,7 @@
   {
     "id": "12",
     "primary_image": "https://fakeimg.pl/350x200/?text=Car12",
-    "price": "$35,000",
+    "price": "35,000",
     "company_brand": "Kia",
     "sub_details": {
       "car_state": "second hand",
