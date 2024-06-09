@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useCarData } from "../services/CarsModul";
 
 export default function SearchBar({ onSearch }) {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const [nestedMenu, setNestedMenu] = useState(false);
   const [query, setQuery] = useState("");
+  const { data } = useCarData("cars.json");
 
   const handleInputChange = (e) => {
     const newQuery = e.target.value;
@@ -18,8 +21,8 @@ export default function SearchBar({ onSearch }) {
     console.log(query);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownVisible((prev) => !prev);
+  const toggleMenu = (key) => {
+    setNestedMenu(nestedMenu === key ? null : key);
   };
 
   return (
@@ -33,11 +36,13 @@ export default function SearchBar({ onSearch }) {
         </label>
         <button
           id="dropdown-button"
-          onClick={toggleDropdown}
+          onClick={() =>
+            setIsDropdownVisible(!isDropdownVisible, setNestedMenu(false))
+          }
           className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
           type="button"
         >
-          All categories{" "}
+          Filter By :{" "}
           <svg
             className="w-2.5 h-2.5 ms-2.5"
             aria-hidden="true"
@@ -55,48 +60,81 @@ export default function SearchBar({ onSearch }) {
           </svg>
         </button>
         {isDropdownVisible && (
-          <div
-            id="dropdown"
-            className="absolute right-0 md:left-0 md:top-11 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-          >
-            <ul
-              className="py-2 text-sm text-gray-700 dark:text-gray-200"
-              aria-labelledby="dropdown-button"
+          <>
+            <div
+              id="dropdown"
+              className="absolute right-0 md:left-0 md:top-11 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
             >
-              <li>
-                <button
-                  type="button"
-                  className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Mockups
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Templates
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Design
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Logos
-                </button>
-              </li>
-            </ul>
-          </div>
+              <ul
+                className="relative py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdown-button"
+              >
+                <li>
+                  <button
+                    className="inline-flex items-center w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    type="button"
+                    onClick={() => onSearch("")}
+                  >
+                    All
+                  </button>
+                </li>
+                {data.map((item) => {
+                  const keyName = Object.keys(item)[0];
+                  return (
+                    <li key={keyName}>
+                      <button
+                        type="button"
+                        className="inline-flex items-center w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        onClick={() => toggleMenu(keyName)}
+                      >
+                        {keyName}{" "}
+                        <svg
+                          className="w-2.5 h-2.5 ms-2.5"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M1 1 4 4 1 7"
+                          />
+                        </svg>
+                      </button>
+                      {nestedMenu === keyName && (
+                        <ul className="absolute left-40 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 max-h-40 overflow-scroll">
+                          <button
+                            type="button"
+                            className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                            onClick={() => onSearch("")}
+                          >
+                            All
+                          </button>
+                          {item[keyName].map((subItem, index) => (
+                            <li
+                              key={index}
+                              className="hover:bg-gray-200 dark:hover:bg-gray-700"
+                            >
+                              <button
+                                type="button"
+                                className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                onClick={() => onSearch(subItem)}
+                              >
+                                {subItem}
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </>
         )}
         <div className="relative w-full">
           <input
