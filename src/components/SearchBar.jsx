@@ -73,7 +73,10 @@ export default function SearchBar({ onSearch }) {
                   <button
                     className="inline-flex items-center w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     type="button"
-                    onClick={() => onSearch("")}
+                    onClick={() => {
+                      onSearch("");
+                      setIsDropdownVisible(false);
+                    }}
                   >
                     All
                   </button>
@@ -109,7 +112,10 @@ export default function SearchBar({ onSearch }) {
                           <button
                             type="button"
                             className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={() => onSearch("")}
+                            onClick={() => {
+                              onSearch("");
+                              setIsDropdownVisible(false);
+                            }}
                           >
                             All
                           </button>
@@ -121,7 +127,10 @@ export default function SearchBar({ onSearch }) {
                               <button
                                 type="button"
                                 className="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                                onClick={() => onSearch(subItem)}
+                                onClick={() => {
+                                  onSearch(subItem);
+                                  setIsDropdownVisible(false);
+                                }}
                               >
                                 {subItem}
                               </button>
